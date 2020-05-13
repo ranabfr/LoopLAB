@@ -1,0 +1,81 @@
+$body-bg:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$icon-font-size:30px;
+
+body{
+	background: $body-bg;
+	color: $font-color;
+}
+.navbar{
+	border-bottom: 3px solid $primary-color;
+	background: #292b2c;
+	opacity:0.7;
+}
+
+#home-top-section{
+	background: url(../img/home.jpg) no-repeat center top;
+	background-size: cover;
+	min-height:600px;
+	background-attachment:fixed;
+	.dark-overlay{
+		background: rgba(0, 0, 0, 0.7);
+		min-height:600px;
+	}
+
+	.fa{
+		background: #fff;
+		color: $primary-color;
+		padding:4px;
+		font-size: $icon-font-size;
+		border-radius:5px
+	}
+
+	.card-form{
+		opacity: 0.8;
+	}
+
+	.home-inner{
+		padding-top:100px;
+		padding-bottom:40px;
+	}
+}
+
+
+#explore-details{ 
+	.fa{
+		background: #333;
+		color: $font-color;
+		padding:4px;
+		font-size: $icon-font-size;
+		border-radius:5px
+	}
+}
+
+#create-section-details{ 
+	.fa{
+		background: $font-color;
+		color: $primary-color;
+		padding:4px;
+		font-size: $icon-font-size;
+		border-radius:5px
+	}
+}
+
+
+#share-section-details{ 
+	.fa{
+		background: #333;
+		color: $font-color;
+		padding:4px;
+		font-size: $icon-font-size;
+		border-radius:5px
+	}
+}
+
+
+@media(max-width: 768px){
+	#home-top-section h1{
+		font-size: 40px
+	}
+}
